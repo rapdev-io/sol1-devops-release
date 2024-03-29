@@ -14,7 +14,7 @@ jobs:
   package-registration:
     runs-on: ubuntu-latest
     steps:
-      - name: SN Register Artifact
+      - name: SN Register Package
         uses: ServiceNow/servicenow-devops-register-package@v2.0.0
         with:
           devops-integration-token: ${{ secrets.SN_TOKEN }}
